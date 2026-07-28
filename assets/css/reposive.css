@@ -1,0 +1,419 @@
+/* Reset para móviles */
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header en móviles */
+header {
+    padding: 1rem 0;
+}
+
+header .container {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header .logo {
+    width: 100%;
+    justify-content: center;
+}
+
+header .logo img {
+    height: 45px;
+    width: 45px;
+}
+
+header .logo h1 {
+    font-size: 1.4rem;
+}
+
+/* Menú vertical en móviles */
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    flex-direction: column;
+    gap: 0.3rem !important;
+}
+
+header nav ul li {
+    width: 100%;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* Página Header Mobile */
+.page-header {
+    padding: 40px 1rem;
+}
+
+.page-header h1 {
+    font-size: 1.8rem;
+}
+
+.page-header p {
+    font-size: 0.95rem;
+}
+
+/* Productos en una sola columna */
+.products-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.2rem !important;
+    padding: 0 !important;
+}
+
+.product-card {
+    max-width: 100% !important;
+}
+
+/* Imágenes fluidas */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Ajustes de fuentes en móviles */
+.product-card h3 {
+    font-size: 1.05rem;
+    padding: 12px 12px 6px !important;
+}
+
+.product-card .description {
+    font-size: 0.85rem;
+    padding: 0 12px 8px !important;
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    padding: 8px 12px !important;
+}
+
+/* Botones en móviles */
+.product-card .btn {
+    width: calc(100% - 24px) !important;
+    padding: 10px !important;
+    margin: 8px 12px 12px !important;
+    font-size: 0.9rem;
+}
+
+/* Contenedor general */
+.container {
+    width: 100% !important;
+    padding: 0 1rem !important;
+    margin: 0 auto !important;
+}
+
+/* Filter bar en móviles */
+.filter-bar {
+    margin-bottom: 1.5rem !important;
+    width: 100%;
+    justify-content: center !important;
+}
+
+.filter-bar select {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 12px !important;
+    font-size: 0.95rem;
+}
+
+/* Section padding */
+.products-section {
+    padding: 2rem 0 !important;
+}
+
+/* ===== TABLETS (768px - 1023px) ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 740px !important;
+        padding: 0 1.5rem !important;
+    }
+
+    header .container {
+        gap: 1.5rem;
+    }
+
+    header .logo {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    header .logo img {
+        height: 48px;
+        width: 48px;
+    }
+
+    header .logo h1 {
+        font-size: 1.6rem;
+    }
+
+    /* 2 columnas de productos */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.8rem !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    /* Menú más amplio */
+    header nav ul {
+        flex-direction: row !important;
+        gap: 0.5rem !important;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        padding: 8px 12px;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    /* Page header tablet */
+    .page-header {
+        padding: 50px 1.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Ajustes en fuentes */
+    .product-card h3 {
+        font-size: 1.15rem;
+    }
+
+    .product-card .description {
+        font-size: 0.9rem;
+    }
+
+    .product-card .price {
+        font-size: 1.5rem;
+    }
+
+    /* Filter bar */
+    .filter-bar {
+        justify-content: flex-start !important;
+    }
+
+    .filter-bar select {
+        max-width: 300px;
+        width: auto;
+    }
+
+    /* Productos section */
+    .products-section {
+        padding: 2.5rem 0 !important;
+    }
+}
+
+/* ===== DESKTOP (1024px+) ===== */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        padding: 0 2rem !important;
+    }
+
+    header {
+        padding: 1.3rem 0;
+    }
+
+    header .container {
+        gap: 2rem;
+    }
+
+    header .logo {
+        width: auto;
+    }
+
+    header .logo img {
+        height: 55px;
+        width: 55px;
+    }
+
+    header .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    /* CSS Grid para Desktop 4 columnas */
+    .products-grid {
+        display: grid !important;
+        grid-template-columns: repeat(5, 1fr) !important;
+        gap: 2rem !important;
+        padding: 1rem 0 !important;
+    }
+
+    .product-card {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    /* Menú Navigation */
+    header nav ul {
+        flex-direction: row !important;
+        gap: 2px !important;
+        justify-content: flex-end;
+    }
+
+    header nav ul li {
+        width: auto;
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+
+    /* Page header desktop */
+    .page-header {
+        padding: 70px 2rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.8rem;
+    }
+
+    .page-header p {
+        font-size: 1.1rem;
+    }
+
+    /* Tipografía Desktop */
+    .product-card h3 {
+        font-size: 1.25rem;
+        padding: 16px 15px 8px !important;
+    }
+
+    .product-card .description {
+        font-size: 0.9rem;
+        padding: 0 15px 10px !important;
+    }
+
+    .product-card .price {
+        font-size: 1.6rem;
+        padding: 12px 15px !important;
+    }
+
+    /* Botones Desktop */
+    .product-card .btn {
+        padding: 12px !important;
+        font-size: 1rem !important;
+        margin: 10px 15px 15px !important;
+        width: calc(100% - 30px) !important;
+    }
+
+    .product-card .btn:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Filter bar Desktop */
+    .filter-bar {
+        display: flex !important;
+        justify-content: flex-start;
+        margin-bottom: 2.5rem !important;
+    }
+
+    .filter-bar select {
+        max-width: 280px;
+        width: auto;
+        padding: 12px 15px !important;
+    }
+
+    /* Productos section */
+    .products-section {
+        padding: 3rem 0 !important;
+    }
+
+    /* Footer */
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        gap: 3rem;
+    }
+}
+
+/* ===== Ajustes Generales ===== */
+
+/* Asegurar que las imágenes no causen scroll horizontal */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Transiciones suaves */
+a, button, .product-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus styles para accesibilidad */
+button:focus,
+a:focus,
+input:focus,
+select:focus {
+    outline: 2px solid #3498db;
+    outline-offset: 2px;
+}
+
+/* Mejoras visuales */
+.btn {
+    font-weight: 600;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Banner responsive */
+.banner {
+    height: 280px;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner {
+        height: 400px;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
