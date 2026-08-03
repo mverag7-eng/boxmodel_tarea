@@ -58,6 +58,29 @@
       justify-content: center;
       gap: 12px;
       flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .help-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+      text-align: left;
+    }
+
+    .help-item {
+      background: #f8fcff;
+      border: 1px solid #dfefff;
+      border-radius: 10px;
+      padding: 12px;
+      color: #456;
+    }
+
+    .help-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #1f4e79;
     }
 
     .btn {
@@ -115,6 +138,21 @@
         <div class="error-actions">
           <a class="btn btn-primary" href="index.html">Volver al inicio</a>
           <a class="btn btn-secondary" href="index.html">Ver productos</a>
+        </div>
+
+        <div class="help-list">
+          <div class="help-item">
+            <strong>Revisa la URL</strong>
+            Asegúrate de que la dirección escrita sea correcta.
+          </div>
+          <div class="help-item">
+            <strong>Explora el catálogo</strong>
+            Encuentra tus productos favoritos desde la página principal.
+          </div>
+          <div class="help-item">
+            <strong>Contacta al equipo</strong>
+            Estamos listos para ayudarte si necesitas asistencia.
+          </div>
         </div>
       </div>
     </section>
